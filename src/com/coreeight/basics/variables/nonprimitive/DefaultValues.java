@@ -1,6 +1,6 @@
 package com.coreeight.basics.variables.nonprimitive;
 
-public class NonPrimitive {
+public class DefaultValues {
 
     static Student myStudent;
 
