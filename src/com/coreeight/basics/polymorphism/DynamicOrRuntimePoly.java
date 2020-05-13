@@ -24,8 +24,15 @@ public class DynamicOrRuntimePoly {
        Parent parentChild = new Child();
        parentChild.addition(1, 3);
 
+       Child childFromParent = (Child) parentChild;
+       childFromParent.addition(1,3);
+
         // <Child Type > referenceName = new <Parent Type> is wrong
         // Child childParent = new Parent(); is wrong
 
+        System.out.println("************************");
+
+        child.callAdditionWithThis(1,1);
+        child.callAdditionWithSuper(1,2);
     }
 }
